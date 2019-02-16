@@ -58,6 +58,8 @@ Following the example of [Jerid Francom](https://francojc.github.io/2015/03/01/w
 
 ```{r, message=FALSE, warning=FALSE}
 ### Inauguaral speeches
+library(xml2)
+library(rvest)
 main.page <- read_html(x = "http://www.presidency.ucsb.edu/inaugurals.php")
 # Get link URLs
 # f.speechlinks is a function for extracting links from the list of speeches. 
